@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ReverseLinkedList",
+      "request": "launch",
+      "mainClass": "ReverseLinkedList",
+      "projectName": "lee-code_bc63ff72"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${fileBasenameNoExtension}",
+      "classPaths": [
+        "${fileDirname}"
+      ],
+      "preLaunchTask": "compile current file"
+    }
+  ]
+}

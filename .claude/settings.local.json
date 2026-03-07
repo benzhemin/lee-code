@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -d /Users/sam/Desktop/test/lee-code/*/)",
+      "Bash(/Users/sam/.sdkman/candidates/java/current/bin/javac -d /Users/sam/Desktop/test/lee-code/206-reverse-linked-list/ /Users/sam/Desktop/test/lee-code/206-reverse-linked-list/ReverseLinkedList.java)"
+    ]
+  }
+}
