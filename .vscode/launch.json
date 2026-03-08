@@ -3,20 +3,10 @@
   "configurations": [
     {
       "type": "java",
-      "name": "ReverseLinkedList",
+      "name": "SwapNodesInPairs",
       "request": "launch",
-      "mainClass": "ReverseLinkedList",
+      "mainClass": "SwapNodesInPairs",
       "projectName": "lee-code_bc63ff72"
-    },
-    {
-      "type": "java",
-      "name": "Current File",
-      "request": "launch",
-      "mainClass": "${fileBasenameNoExtension}",
-      "classPaths": [
-        "${fileDirname}"
-      ],
-      "preLaunchTask": "compile current file"
     }
   ]
 }

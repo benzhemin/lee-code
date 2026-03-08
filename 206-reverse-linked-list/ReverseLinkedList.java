@@ -1,9 +1,9 @@
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ReverseLinkedList<T> {
 
-  @SuppressWarnings("unchecked")
-  public ListNode<T> createList(T ...list) {
+  public ListNode<T> createList(List<T> list) {
     ListNode<T> head = null;
     ListNode<T> cur = head;
 
@@ -47,7 +47,7 @@ public class ReverseLinkedList<T> {
   public static void main(String[] args) {
     ReverseLinkedList<Integer> reverseLinkedList = new ReverseLinkedList<>();
 
-    ListNode<Integer> head = reverseLinkedList.createList(1, 2, 3, 4, 5);
+    ListNode<Integer> head = reverseLinkedList.createList(List.of(1, 2, 3, 4, 5));
     reverseLinkedList.traverse(head, (Integer t) -> System.out.println(t));
 
 
