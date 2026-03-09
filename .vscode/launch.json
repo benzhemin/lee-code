@@ -3,9 +3,9 @@
   "configurations": [
     {
       "type": "java",
-      "name": "SwapNodesInPairs",
+      "name": "ReverseKGroup",
       "request": "launch",
-      "mainClass": "SwapNodesInPairs",
+      "mainClass": "ReverseKGroup",
       "projectName": "lee-code_bc63ff72"
     }
   ]
