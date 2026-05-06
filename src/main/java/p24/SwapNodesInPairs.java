@@ -1,3 +1,5 @@
+package p24;
+
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -7,7 +9,7 @@ public class SwapNodesInPairs<T> {
     ListNode<T> head = null;
     ListNode<T> cur = head;
 
-    for (T t: list) {
+    for (T t : list) {
       ListNode<T> node = new ListNode<>(t);
       if (head == null) {
         head = node;
@@ -51,7 +53,7 @@ public class SwapNodesInPairs<T> {
 
     return head;
   }
-  
+
   public static void main(String[] args) {
     SwapNodesInPairs<Integer> snip = new SwapNodesInPairs<>();
 
@@ -60,7 +62,7 @@ public class SwapNodesInPairs<T> {
 
     ListNode<Integer> swapedHead = snip.swapInPairs(head);
     snip.traverse(swapedHead, (Integer t) -> System.out.println(t));
-  }  
+  }
 
 }
 

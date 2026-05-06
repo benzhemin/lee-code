@@ -1,3 +1,5 @@
+package p20;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Map;
@@ -9,21 +11,22 @@ public class ValidParentheses {
   static Map<Character, Character> BRACKET_MAP = Map.of('(', ')', '{', '}', '[', ']');
   static Set<Character> KEY_SET = BRACKET_MAP.keySet();
 
-
   public static boolean isValidParentheses(String input) {
     Deque<Character> stack = new ArrayDeque<Character>();
 
-    for(int i = 0; i < input.length(); i++) {
+    for (int i = 0; i < input.length(); i++) {
       char c = input.charAt(i);
       if (KEY_SET.contains(c)) {
         stack.push(c);
       } else {
-        if (stack.isEmpty()) return false;
+        if (stack.isEmpty())
+          return false;
 
         Character popChar = stack.pop();
         Character expectChar = BRACKET_MAP.get(popChar);
 
-        if (expectChar != c) return false;
+        if (expectChar != c)
+          return false;
       }
     }
 
@@ -32,10 +35,10 @@ public class ValidParentheses {
 
   public static <T> T require(T actual, T expected, String msg) {
     if (!Objects.equals(actual, expected))
-        throw new IllegalStateException(
-            String.format("%s: expected=%s, actual=%s", msg, expected, actual));
+      throw new IllegalStateException(
+          String.format("%s: expected=%s, actual=%s", msg, expected, actual));
     return actual;
-}
+  }
 
   public static void main(String[] args) {
     // For given test cases

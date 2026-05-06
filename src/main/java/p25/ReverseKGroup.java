@@ -1,3 +1,5 @@
+package p25;
+
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -102,4 +104,3 @@ class ListNode<T> {
     this.next = next;
   }
 }
-

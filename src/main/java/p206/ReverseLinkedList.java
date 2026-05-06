@@ -1,3 +1,5 @@
+package p206;
+
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -7,7 +9,7 @@ public class ReverseLinkedList<T> {
     ListNode<T> head = null;
     ListNode<T> cur = head;
 
-    for (T t: list) {
+    for (T t : list) {
       ListNode<T> node = new ListNode<>(t);
       if (head == null) {
         head = node;
@@ -43,18 +45,16 @@ public class ReverseLinkedList<T> {
     return newHead;
   }
 
-
   public static void main(String[] args) {
     ReverseLinkedList<Integer> reverseLinkedList = new ReverseLinkedList<>();
 
     ListNode<Integer> head = reverseLinkedList.createList(List.of(1, 2, 3, 4, 5));
     reverseLinkedList.traverse(head, (Integer t) -> System.out.println(t));
 
-
     ListNode<Integer> reversedHead = reverseLinkedList.reverseList(head);
 
     reverseLinkedList.traverse(reversedHead, (Integer t) -> System.out.println(t));
-  }  
+  }
 }
 
 class ListNode<T> {
@@ -71,4 +71,3 @@ class ListNode<T> {
     this.next = next;
   }
 }
-
