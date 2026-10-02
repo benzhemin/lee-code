@@ -1,4 +1,4 @@
-package p20;
+package archive.p20;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

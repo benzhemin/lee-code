@@ -1,0 +1,10 @@
+{
+  "folders": [
+    { "name": "lee-code-java", "path": "lee-code-java" },
+    { "name": "lee-code-js", "path": "lee-code-js" }
+  ],
+  "settings": {
+    "java.server.launchMode": "Standard",
+    "java.configuration.updateBuildConfiguration": "automatic"
+  }
+}

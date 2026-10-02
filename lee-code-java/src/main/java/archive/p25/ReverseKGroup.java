@@ -1,4 +1,4 @@
-package p25;
+package archive.p25;
 
 import java.util.List;
 import java.util.function.Consumer;

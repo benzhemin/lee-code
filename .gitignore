@@ -1,2 +1,25 @@
+# Java / Gradle
 .gradle/
 build/
+bin/
+out/
+target/
+*.class
+
+# JavaScript / Node.js
+node_modules/
+dist/
+coverage/
+.next/
+.nuxt/
+.parcel-cache/
+*.tsbuildinfo
+
+# Local settings and logs
+.idea/
+.vscode/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example

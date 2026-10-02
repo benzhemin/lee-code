@@ -21,7 +21,7 @@ dependencies {
 }
 
 application {
-    mainClass = project.hasProperty('mainClass') ? project.getProperty('mainClass') : 'com.example.App'
+    mainClass = project.hasProperty('mainClass') ? project.getProperty('mainClass') : 'p2.AddTwoNumber'
 }
 
 java {

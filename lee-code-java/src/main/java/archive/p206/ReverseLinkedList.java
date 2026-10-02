@@ -1,4 +1,4 @@
-package p206;
+package archive.p206;
 
 import java.util.List;
 import java.util.function.Consumer;
